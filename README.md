@@ -7,7 +7,6 @@ Languages:
 - Javascript 
 - SQL
 
-Notes:
 Assumptions made:
 - That I would have access to the frontend site. When creating the API I also created the frontend to make sure everything worked smoothly. I have now removed the frontend for the assessment. So, to connect the backend and frontend, you would simply type the directory of the frontend file into the file src/index.js
 
