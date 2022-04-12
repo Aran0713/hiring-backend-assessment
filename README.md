@@ -4,6 +4,7 @@ Created a REST API and database that would handle a step of listing a car. This 
 
 Languages:
 - Node.js
+- Express
 - Javascript 
 - SQL
 
