@@ -53,8 +53,8 @@ export const formCreateUser = (req, res) =>{
         var {data} = await nhtsa.decodeVin(user.VIN);
         data = [data];
         user.CarYear = data[0].Results[9].Value;
-        user.CarMake = data[0].Results[8].Value;
-        user.CarModel = data[0].Results[6].Value;
+        user.CarMake = data[0].Results[6].Value;
+        user.CarModel = data[0].Results[8].Value;
 
         var sql = "INSERT INTO datatest.car_details (LicensePlate, Registration, State, RegistrationExpiration, Name, VIN, CarValue, CurrentMileage, VehicleDescription, VehicleColor, CarYear, CarMake, CarModel) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         connection.query(sql, [user.LicensePlate, user.Registration, user.State, user.RegistrationExpiration, user.Name, user.VIN, user.CarValue, user.CurrentMileage, user.VehicleDescription, user.VehicleColor,user.CarYear, user.CarMake, user.CarModel], function(err,result){});
@@ -70,8 +70,8 @@ export const createUser = (req,res) => {
         var {data} = await nhtsa.decodeVin(user.VIN);
         data = [data];
         user.CarYear = data[0].Results[9].Value;
-        user.CarMake = data[0].Results[8].Value;
-        user.CarModel = data[0].Results[6].Value;
+        user.CarMake = data[0].Results[6].Value;
+        user.CarModel = data[0].Results[8].Value;
 
         var sql = "INSERT INTO datatest.car_details (LicensePlate, Registration, State, RegistrationExpiration, Name, VIN, CarValue, CurrentMileage, VehicleDescription, VehicleColor, CarYear, CarMake, CarModel) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
         connection.query(sql, [user.LicensePlate, user.Registration, user.State, user.RegistrationExpiration, user.Name, user.VIN, user.CarValue, user.CurrentMileage, user.VehicleDescription, user.VehicleColor,user.CarYear, user.CarMake, user.CarModel], function(err,result){});
