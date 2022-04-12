@@ -62,7 +62,6 @@ export const formCreateUser = (req, res) =>{
 
     res.send(`User with the License Plate ${user.LicensePlate} added to the database!`);
 }
-
 // Creates new user manually
 export const createUser = (req,res) => {
     var user = req.body;
