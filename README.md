@@ -17,9 +17,7 @@ To bring up the server:
 Other Notes:
 - All files can be found in master branch.
 - I wrote the code using JavaScript, I would be able write the code in TypeScript if needed. 
-- It took me a longer time than expected to complete the assessment, I also had multiple assignments and papers due this week. My apologize if this caused any inconvenience. 
-- The API works from the files I have added and changing package.json
-- Everything works perfectly and would take minor changes to change where the inputs for post, get, delete and patch come from. Please feel free to contact me if there's any questions about the code.
+
 
 
 
